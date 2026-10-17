@@ -1,6 +1,6 @@
 package com.example.navigationdemo
 
-import android.navigation3.runtime.NavKey
+import androidx.navigation3.runtime.NavKey
 import kotlinx.serialization.Serializable
 
 // Ключ для главного экрана

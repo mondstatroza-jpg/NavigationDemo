@@ -28,7 +28,8 @@ fun Welcome(onNavigation: (NavKey) -> Unit, name: String = "") {
             )
             Spacer(modifier = Modifier.size(30.dp))
             Button(onClick = {
-                onNavigation(ProfileScreen)
+                // Передаём имя дальше на экран профиля
+                onNavigation(ProfileScreen(name))
             }) {
                 Text(text = "Set up your Profile")
             }

@@ -11,6 +11,6 @@ data object HomeScreen : NavKey
 @Serializable
 data class WelcomeScreen(val name: String) : NavKey
 
-// Ключ для экрана профиля
+// Ключ для экрана профиля. Тоже принимает имя, чтобы показать его на аватаре.
 @Serializable
-data object ProfileScreen : NavKey
+data class ProfileScreen(val name: String) : NavKey

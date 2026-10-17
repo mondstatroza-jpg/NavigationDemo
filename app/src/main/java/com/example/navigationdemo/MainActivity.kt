@@ -57,8 +57,8 @@ fun MainScreen(modifier: Modifier = Modifier) {
             entry<WelcomeScreen> { key ->
                 Welcome(onNavigation, key.name)
             }
-            entry<ProfileScreen> {
-                Profile(onClearBackStack)
+            entry<ProfileScreen> { key ->
+                Profile(name = key.name, onClearBackStack = onClearBackStack)
             }
         }
     )
